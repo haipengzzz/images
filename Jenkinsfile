@@ -18,7 +18,7 @@ node('haimaxy-jnlp') {
     }
     stage('Push') {
         echo "4.Push Docker Image Stage"
-            sh "docker login -u haipengzhao} -p ZHao123..}"
+            sh "docker login -u haipengzhao} -p ZHao123.."
             sh "docker push cnych/jenkins-demo:${build_tag}"
     }
     stage('Deploy') {
